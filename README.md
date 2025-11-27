@@ -1,60 +1,73 @@
-# 🛡️ Advanced Network Forensics Pipeline
-A professional-grade network traffic analysis and threat detection system built with **Python** and **Streamlit**, designed to simulate real-world cybersecurity workflows. The application processes and analyzes PCAP files to identify suspicious patterns, anomalies, and potential attacks—making it ideal for SOC analysts, IR teams, and cybersecurity learners.
+<a id="readme-top"></a>
 
-Related Projects:
-- <a href="https://github.com/ryberts/pcap-attack-generator">**PCAP Attack Simulation</a> Generator** (Synthetic PCAP creator)
-- <a href="https://github.com/ryberts/advanced-network-forensics-pipeline-cmd">**Advanced Network Forensics Pipeline – CLI Version**</a>
+
+<!-- PROJECT -->
+
+<br />
+<div align="center">
+
+<h1 align="center">🛡️Advanced Network Forensics Pipeline</h1>
+
+  <p align="center">
+      An interactive PCAP generator that creates realistic network traffic.</br>
+      Related Project - Generate Simulated PCAP alert <a href="https://github.com/ryberts/pcap-attack-generator">PCAP Attack Simulation Generator</a>
+    <br />
+    </a>
+    &middot;
+    <a href="https://github.com/ryberts/advanced-network-forensics-pipeline-cmd/issues">Report Bug or Request a Feature</a>
+
+  </p>
+</div>
 
 ---
 <details>
 <summary class="toc-summary"><strong>Table of Contents</summary>
 
-- [🛡️ Advanced Network Forensics Pipeline](#️-advanced-network-forensics-pipeline)
-  - [Live Demo](#live-demo)
-  - [About the Project](#about-the-project)
-  - [Use Cases](#use-cases)
-  - [Key Features](#key-features)
-    - [Multi-Phase Analysis Pipeline](#multi-phase-analysis-pipeline)
-    - [Professional Streamlit Dashboard](#professional-streamlit-dashboard)
-    - [File Handling](#file-handling)
-  - [Quick Start](#quick-start)
-    - [Prerequisites](#prerequisites)
-    - [Install \& Run](#install--run)
-  - [Project Structure](#project-structure)
-  - [Usage](#usage)
-    - [Via Streamlit UI (Recommended)](#via-streamlit-ui-recommended)
-  - [Threat Detection Examples](#threat-detection-examples)
-    - [1. Port Scanning](#1-port-scanning)
-    - [2. Suspicious Port Communication](#2-suspicious-port-communication)
-    - [3. DNS Anomalies](#3-dns-anomalies)
-    - [4. Data Exfiltration](#4-data-exfiltration)
-  - [Report Examples](#report-examples)
-    - [JSON](#json)
-    - [HTML](#html)
-    - [TXT](#txt)
-  - [Technology Stack](#technology-stack)
-  - [Configuration](#configuration)
-    - [Adjustable Settings](#adjustable-settings)
-    - [Threat Detection Tuning](#threat-detection-tuning)
-  - [Testing](#testing)
-    - [Generate Sample PCAP](#generate-sample-pcap)
-    - [Run Test](#run-test)
-  - [Security Notes](#security-notes)
-  - [Use Cases and Scenarios](#use-cases-and-scenarios)
-    - [SOC Workflow](#soc-workflow)
-    - [Incident Response](#incident-response)
-    - [Malware Analysis](#malware-analysis)
-    - [Security Training](#security-training)
-  - [Contributing](#contributing)
-  - [Resources](#resources)
-  - [Disclaimer](#disclaimer)
+- [Live Demo](#live-demo)
+- [About the Project](#about-the-project)
+- [Use Cases](#use-cases)
+- [Key Features](#key-features)
+  - [Multi-Phase Analysis Pipeline](#multi-phase-analysis-pipeline)
+  - [Professional Streamlit Dashboard](#professional-streamlit-dashboard)
+  - [File Handling](#file-handling)
+- [Quick Start](#quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Install \& Run](#install--run)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+  - [Via Streamlit UI (Recommended)](#via-streamlit-ui-recommended)
+- [Threat Detection Examples](#threat-detection-examples)
+  - [1. Port Scanning](#1-port-scanning)
+  - [2. Suspicious Port Communication](#2-suspicious-port-communication)
+  - [3. DNS Anomalies](#3-dns-anomalies)
+  - [4. Data Exfiltration](#4-data-exfiltration)
+- [Report Examples](#report-examples)
+  - [JSON](#json)
+  - [HTML](#html)
+  - [TXT](#txt)
+- [Technology Stack](#technology-stack)
+- [Configuration](#configuration)
+  - [Adjustable Settings](#adjustable-settings)
+  - [Threat Detection Tuning](#threat-detection-tuning)
+- [Testing](#testing)
+  - [Generate Sample PCAP](#generate-sample-pcap)
+  - [Run Test](#run-test)
+- [Security Notes](#security-notes)
+- [Use Cases and Scenarios](#use-cases-and-scenarios)
+  - [SOC Workflow](#soc-workflow)
+  - [Incident Response](#incident-response)
+  - [Malware Analysis](#malware-analysis)
+  - [Security Training](#security-training)
+- [Contributing](#contributing)
+- [Resources](#resources)
+- [Disclaimer](#disclaimer)
 </details>
 
 ## Live Demo
 
 [![Open in GitHub Codespaces](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://anfpav.streamlit.app/)
 
----
+
 
 ## About the Project
 This project provides a complete **network forensics pipeline** for analyzing packet captures (PCAP files). It processes network traffic, extracts protocol and conversation data, detects abnormalities, and generates structured forensic reports.
@@ -75,6 +88,8 @@ The pipeline is designed to mimic workflows used in real SOC and IR environments
 - 🟡 **Security Audits & Compliance**
 - 🟢 **Malware Network Behavior Analysis**
 - 🔵 **Cybersecurity Training & Education**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -108,6 +123,8 @@ The pipeline is designed to mimic workflows used in real SOC and IR environments
 - 1K–50K packet configurable limit
 - Quick Mode for faster processing
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Quick Start
@@ -134,6 +151,8 @@ streamlit run app.py
 ```
 App runs at: **http://localhost:8501**
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Project Structure
@@ -150,6 +169,7 @@ network-forensics-pipeline/
 ├── requirements.txt
 └── README.md
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -183,6 +203,8 @@ network-forensics-pipeline/
 **Packet Count:** 15,234  
 **Severity:** 🟡 Low
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Report Examples
@@ -198,6 +220,8 @@ network-forensics-pipeline/
 ### TXT
 - Manager-facing summary
 - Risk level
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -227,6 +251,8 @@ self.suspicious_ports = {
 }
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Testing
@@ -246,6 +272,8 @@ streamlit run app.py
 ```
 Upload `samples/example.pcap` → Click **Start Analysis**
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Security Notes
@@ -253,6 +281,8 @@ Upload `samples/example.pcap` → Click **Start Analysis**
 - PCAPs never leave your device
 - Reports stored only in local `reports/` directory
 - No telemetry or data collection
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -278,6 +308,8 @@ Upload `samples/example.pcap` → Click **Start Analysis**
 - Generate synthetic PCAPs
 - Train students on threat identification
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Contributing
@@ -286,6 +318,8 @@ Contributions welcome! Potential areas:
 - ML‑based anomaly detection
 - Integration with OTX/VirusTotal APIs
 - Real‑time PCAP streaming
+- 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -296,14 +330,16 @@ Contributions welcome! Potential areas:
 - PCAP File Format Spec
 - Wireshark User Guide
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Disclaimer
 This tool is intended for authorized security testing on networks you own or have explicit permission to analyze.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 **Built with Python 3.8+ · Streamlit · Scapy · MIT Licensed**
 
-#   a d v a n c e d - n e t w o r k - f o r e n s i c s - p i p e l i n e - a p p - v e r  
- 
