@@ -1,0 +1,19 @@
+# Python
+venv/
+.env
+__pycache__/
+*.pyc
+
+# Streamlit config (sensitive)
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# Generated files
+reports/
+temp/
+uploads/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
